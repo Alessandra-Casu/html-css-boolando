@@ -4,26 +4,81 @@
     box-sizing: border-box;
 }
 
-
-.header-nav{
+.container{
     display: flex;
-    background-color: orange;
-    min-height:60px ;
+    width: 100%;
+    background-color: rgb(241, 117, 8);
 }
 
-.gender{
-    background-color: aquamarine;
+.left{
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.header-nav a{
-    color: white;
+.gender a{
     text-decoration: none;
+    color: white;
+}
+
+.center{
+    display: flex;
+    padding: 1rem;
+    width: 50%;
+    justify-content: center;
+    color: white;
 }
 
 .logo{
-    background-color: salmon;
-    background-image:url(../img/boolean-logo.png);
-    background-size: contain;
-   
-    
+    width: 20%;
 }
+
+.right{
+    display: flex;
+    width: 25%;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.right i{
+    padding-right: 0.5rem;
+}
+
+/*main*/
+.main-container{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card
+{
+   
+    width: 30%;
+    margin-top: 3rem ;  
+}
+
+.image{
+    width: 100%;
+}
+.text{
+    font-size: small;
+}
+.name{
+    font-weight: 800;
+}
+
+.price{
+    display: flex;
+}
+
+.price .sale{
+    color: red;
+    font-weight: 800;
+}
+.price .nosale{
+    text-decoration-line: line-through;
+}
+
